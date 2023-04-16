@@ -4,7 +4,6 @@ import Nav from '../components/Nav'
 import Results from '../components/Results'
 
 export default function Home(props) {
-  console.log(props.results)
   return (
     <div>
       <Head>
@@ -24,6 +23,7 @@ export default function Home(props) {
 
 export async function getServerSideProps(context) {
   const request = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=92ad5a933b9f93a0c1b49a8b2d907866').then((res)=>res.json())
+
   return {
     props: {
       results: request.results,
