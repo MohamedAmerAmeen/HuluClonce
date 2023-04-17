@@ -49,9 +49,9 @@ const MovieDetail = (MovieData) => {
         <div className='px-5'>
             <h1 className='text-gray-500 text-xl font-semibold'>Cast</h1>
             <div className='sm:md:lg:xl:w-3/4 mt-2 flex item scroll-mx-2 sm:md:lg:xl:space-x-5 overflow-x-scroll whitespace-nowrap scrollbar-hide'>
-                {castData.cast.map((actor)=>(
-                <div className='group mt-2 flex flex-col items-center'>
-                    <img src={`https://image.tmdb.org/t/p/original${actor?.profile_path}`} className='w-20 h-20 rounded-full'/>
+                {castData.cast?.map((actor)=>(
+                <div key={actor.id} className='group mt-2 flex flex-col items-center w-20'>
+                    <img src={`https://image.tmdb.org/t/p/original${actor?.profile_path}`} alt='https://cdn.icon-icons.com/icons2/11/PNG/256/actor_oscar_person_people_man_1682.png' className='w-20 h-20 rounded-full'/>
                     <p className='opacity-0 transation duration-500 group-hover:opacity-100'>{actor?.name}</p>
                 </div>
             ))}

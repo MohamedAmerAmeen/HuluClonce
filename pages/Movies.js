@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Header from '../Components/Header'
 import Nav from '../components/Nav'
-import Results from '../components/Results'
-import Footer from '../components/Footer'
+import AllMovie from '../components/AllMovie'
 
 export default function Home(props) {
   return (
@@ -17,8 +16,7 @@ export default function Home(props) {
       {/* Nav */}
       {/* <Nav/> */}
       {/* Result */}
-      <Results Movies={props}/>
-      <Footer/>
+      <AllMovie Movies={props}/>
     </div>
   )
 }

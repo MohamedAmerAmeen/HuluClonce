@@ -16,7 +16,8 @@
     "react-dom": "^18.2.0",
     "reactstrap": "^9.1.9",
     "tailwind-scrollbar": "^3.0.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "vercel": "^28.18.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
